@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wichtelpaare Generator mit Impressum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wichtelpaare Generator</h1>
+        <form id="wichtelForm">
+            <label for="namesInput">Trage die Namen der Wichtel ein (durch Komma getrennt):</label>
+            <textarea id="namesInput" rows="4" placeholder="z.B. Frank, Luisa, Isolde"></textarea>
+            <button type="button" id="shuffleButton">Mischen</button>
+            <button type="button" id="clearButton">Löschen</button>
+        </form>
+        <ul id="pairsList"></ul>
+    </div>
+
+    <!-- Accordion für Impressum -->
+    <div class="impressum">
+        <button id="impressumButton">Impressum anzeigen</button>
+        <div id="impressumContent" class="hidden">
+            <p>Schulhof-Programmierung.de - Peter Grimm, Osloer Str. 10 - 13359 Berlin </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
